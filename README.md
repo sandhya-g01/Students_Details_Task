@@ -19,14 +19,9 @@ This web app allows users to input student details, **save them to a dynamic tab
 ## 📂 Project Structure
 
 student-registration-form/
-
-│
 ├── index.html       # Main page with student form and table
-
 ├── script.js        # Handles form submission, save, and delete actions
-
 ├── style.css        # Optional: custom styles
-
 └── README.md        # Project documentation
 
 ## 🚀 How to Use
