@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Task</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="py-10 px-4">
+    <h1 class="text-5xl font-bold text-center text-blue-600 mt-4">STUDENT DETAILS TASK</h1>
+    <h2 class="text-3xl font-bold text-center mt-24 mb-4 ">STUDENT FORM</h2>
+    <!----form---->
+    <form id="studentform" class="bg-white w-full max-w-md mx-auto p-2 rounded-xl shadow-md border-2 border-black">
+    <!-- Name -->
+    <div class="flex items-center">
+      <label for="name" class="w-24 font-semibold border-2 border-black rounded p-2">Name</label>
+      <input type="text" id="name" placeholder="Enter your Name"class="flex-1 border-2 border-black rounded p-2 focus:outline-none">
+
+    </div>
+
+    <!-- Age -->
+    <div class="flex items-center">
+      <label for="age" class="w-24 font-semibold border-2 border-black rounded p-2">Age</label>
+      <input type="number" id="age" placeholder="Enter your Age" class="flex-1 border rounded p-2 border-2 border-black">
+    </div>
+
+    <!-- Gender -->
+    <div class="flex items-center">
+      <label class="w-24 font-semibold border-2 border-black rounded p-2">Gender</label>
+      <div class="flex-1 flex gap-4 border-2 border-black rounded p-2">
+        <label><input type="radio" name="gender" value="Male" required class="mr-1 " /> Male</label>
+        <label><input type="radio" name="gender" value="Female" class="mr-1" /> Female</label>
+      </div>
+    </div>
+
+    <!-- Course -->
+    <div class="flex items-center">
+      <label for="course" class="w-24 font-semibold border-2 border-black rounded p-2">Course</label>
+      <select id="course" class="flex-1 border-2 border-black rounded p-2">
+        <option value="Python">Python</option>
+        <option value="C++">C++</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Java">Java</option>
+      </select>
+    </div>
+
+    <!-- Email -->
+    <div class="flex items-center">
+      <label for="email" class="w-24 font-semibold border-2 border-black rounded p-2">E-mail</label>
+      <input type="email" id="email" placeholder="Enter your e-mail" class="flex-1 border-2 border-black rounded p-2">
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit"
+      class="w-full bg-green-800 text-white font-semibold text-xl mt-1 border-2 border-black rounded p-2 hover:bg-blue-800 transition">
+      Save</button>
+  </form>
+  <!-- Table -->
+  <div class="mt-10 max-w-5xl mx-auto border-2 border-black ">
+    <table class="w-full table-auto bg-white shadow-md rounded-xl">
+      <thead class="bg-gray-200 text-sm font-semibold text-gray-800">
+        <tr>
+          <th class="border p-2 ">NAME</th>
+          <th class="border p-2">AGE</th>
+          <th class="border p-2">COURSE</th>
+          <th class="border p-2">GENDER</th>
+          <th class="border p-2">EMAIL</th>
+          <th class="border p-2">ACTION</th>
+        </tr>
+      </thead>
+      <tbody id="studentTable">
+        <!-- Added Rows -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js">  </script>
+</body>
+</html>
