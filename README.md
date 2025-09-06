@@ -44,8 +44,8 @@ student-registration-form/
 
 ## 🔗 Useful Links
 
-* 🌐 **Live Demo:** \[Your live website URL here]
-* 📁 **GitHub Repository:** \[Your GitHub repo URL here]
+* 🌐 **Live Demo:** https://sandhya-g01.github.io/Students_Details_Task/
+* 📁 **GitHub Repository:** https://github.com/sandhya-g01/Students_Details_Task
 
 > Built with ❤️ using **HTML, TailwindCSS, and JavaScript**
 > Includes full **Save** and **Delete** functionality for managing student records.
